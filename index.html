@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e75e9b" />
+    <title>Happy Birthday, Palak!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="password-screen" id="password-screen" aria-label="Password protected birthday website">
+      <div class="password-card">
+        <div class="lock">♥</div><p class="eyebrow">PRIVATE SURPRISE FOR PALAK</p>
+        <h2>Hey Babu,<br><em>unlock your surprise.</em></h2>
+        <p>Ek chhota sa password, then your romantic birthday surprise is all yours.</p>
+        <input id="password" type="password" autocomplete="off" placeholder="Enter the secret word" aria-label="Password" />
+        <button class="button" id="unlock">Open my surprise <b>♥</b></button>
+        <small id="password-note">Hint: a sweet name.</small>
+      </div>
+    </section>
+    <div class="petals" aria-hidden="true"></div>
+    <div class="intro-screen" id="intro-screen">
+      <p class="eyebrow">A LITTLE SOMETHING FOR PALAK</p>
+      <button class="gift" id="open-gift" aria-label="Open your birthday surprise"><span>♥</span></button>
+      <p>Tap the gift to open your surprise</p>
+    </div>
+
+    <main>
+      <section class="hero">
+        <nav><span class="brand">for <i>Palak</i></span><span>made with love ♥ &nbsp; <a href="#candle-wish">blow the cake →</a></span></nav>
+        <div class="hero-copy">
+          <p class="eyebrow">TODAY IS ALL ABOUT YOU, BABU</p>
+          <h1>Happy<br><em>Birthday,</em><br>Palak</h1>
+          <p class="intro">Happy Birthday meri pyari Palak! You make my world feel softer, brighter, aur bilkul magical. May this year bring you all the pyaar, happiness, and dreams you deserve, babu.</p>
+          <button class="button" id="celebrate">Make a wish <b>✦</b></button>
+        </div>
+        <div class="hero-photo"><img src="photos/palak-08.jpeg" alt="Palak and a loved one beneath pink flowers" /><span class="photo-note">meri beautiful girl ke liye ek beautiful day</span></div>
+        <div class="orb one"></div><div class="orb two"></div><div class="spark s1">✦</div><div class="spark s2">♥</div>
+      </section>
+
+      <section class="wishes">
+        <header><p class="eyebrow">A LITTLE LOVE FOR YOU</p><h2>Birthday wishes, <em>from the heart.</em></h2></header>
+        <div class="wish-grid">
+          <button class="wish-card rose" data-message="Palak babu, tumhari smile meri favourite sunshine hai. Bas aise hi hamesha muskuraati rehna, kyunki tumhari khushi meri favourite feeling hai."><span>☀</span><h3>Khushiyan hi khushiyan</h3><p>Kyuki tum meri har ordinary day ko bhi golden bana deti ho, babu.</p></button>
+          <button class="wish-card lilac" data-message="Meri jaan, tumhare dil ke har sapne ko apni perfect jagah mile. Main hamesha tumhara sabse bada cheerleader rahunga."><span>✿</span><h3>Saare sapne</h3><p>Tumhare beautiful dreams ek even more beautiful reality deserve karte hain.</p></button>
+          <button class="wish-card peach" data-message="Tumhare saath har memory extra special lagti hai, Palak. Aise hi aur laughs, hugs aur cute little adventures bante rahein."><span>♡</span><h3>Pyaare pal</h3><p>Tumhare saath har chhoti si baat bhi celebrate karne layak lagti hai.</p></button>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <header><p class="eyebrow">YOUR STORY, IN FRAMES</p><h2>All your <em>beautiful moments.</em></h2><p class="subcopy">A small collection of memories as lovely as you are.</p></header>
+        <div class="grid" id="gallery">
+          <button class="tall"><img src="photos/palak-03.jpeg" alt="Palak in pink traditional dress" /></button>
+          <button><img src="photos/palak-06.jpeg" alt="Palak by pink flowers" /></button>
+          <button><img src="photos/palak-08.jpeg" alt="Palak posing with a loved one" /></button>
+          <button><img src="photos/palak-02.jpeg" alt="Palak smiling" /></button>
+          <button><img src="photos/palak-01.jpeg" alt="Palak in a celebration selfie" /></button>
+          <button><img src="photos/palak-07.jpeg" alt="Palak by floral decorations" /></button>
+          <button><img src="photos/palak-05.jpeg" alt="Palak wearing a pink outfit" /></button>
+        </div>
+      </section>
+
+      <section class="note">
+        <div><p class="eyebrow">ONE WISH, JUST FOR YOU</p><h2>May your days be<br><em>as lovely as you.</em></h2><p>Keep shining, keep dreaming, aur kabhi bhi forget mat karna ki you are deeply loved, meri jaan.</p><a class="cake-link" href="#candle-wish">Go blow your birthday candle <span>→</span></a></div>
+        <form id="wish-form"><label for="wish">A romantic wish for Palak</label><textarea id="wish" maxlength="220" placeholder="Happy Birthday babu, may your smile always find a reason to shine..." required></textarea><button class="button">Send to Anmol <b>♥</b></button><small>Your email app will open with this wish ready to send.</small></form>
+      </section>
+      <section class="candle-wish" id="candle-wish">
+        <div class="candle-copy"><p class="eyebrow">MAKE A WISH, BABU</p><h2>Blow the candle,<br><em>Palak.</em></h2><p>Close your eyes, make your sweetest wish, aur tap the flame for a little birthday magic.</p></div>
+        <div class="cake-stage" aria-label="A birthday cake with a candle">
+          <div class="cake-stars">✦ &nbsp; ♥ &nbsp; ✦ &nbsp; ✧ &nbsp; ♥</div>
+          <button class="birthday-candle" id="birthday-candle" aria-label="Blow out the candle"><i></i></button>
+          <div class="cake-top"></div><div class="cake-middle"></div><div class="cake-bottom"></div><div class="cake-plate"></div>
+        </div>
+        <button id="make-wish" class="button">I made a wish <b>♥</b></button><p class="candle-message" id="candle-message">Tap the flame, babu.</p>
+      </section>
+    </main>
+    <footer>Made with extra sparkle for Palak, meri jaan <span>♥</span></footer>
+    <div class="modal" id="modal" aria-hidden="true"><div class="modal-card"><button class="close" aria-label="Close">×</button><div class="modal-icon">♥</div><p class="eyebrow">A LITTLE NOTE FOR PALAK</p><p id="modal-text"></p></div></div>
+    <div class="toast" id="toast">Your lovely birthday wish has been sent! ✨</div>
+    <div class="music-player"><button id="music-toggle">♫ Play Apsara</button><button id="music-next">⇄ Play birthday message</button></div>
+    <audio id="music" preload="metadata"><source src="apsara.mpeg" type="audio/mpeg" /></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
